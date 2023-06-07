@@ -1,0 +1,41 @@
+<div class="container-fluid loginContainer">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Welcome to MyApp</h3>
+                <form [formGroup]="insertForm" (ngSubmit)="submitAdminLogInForm()">
+                    <div class="form-group">
+                        <label for="Username">
+                            <i class="fas fa-user"></i> Username
+                        </label>
+                        <input
+                            formControlName="Username"
+                            type="text"
+                            class="form-control"
+                            id="Username"
+                            placeholder="Enter your username"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">
+                            <i class="fas fa-lock"></i> Password
+                        </label>
+                        <input
+                            formControlName="Password"
+                            type="password"
+                            class="form-control"
+                            id="Password"
+                            placeholder="Enter your password"
+                        />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="text-center mb-0">
+                    <a [routerLink]="['/forgot-password']">Forgot your password?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
