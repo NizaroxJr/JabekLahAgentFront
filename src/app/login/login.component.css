@@ -1,0 +1,82 @@
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/backagent.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+   
+}
+
+.card-title {
+    text-align: center;
+    font-size: 24px;
+    color: #FCA311;
+    margin-top: 20px;
+    font-weight: 700; 
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #14213D;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    background-color: #E5E5E5;
+    color: #14213D;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #FCA311;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #000;
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.card-footer a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}

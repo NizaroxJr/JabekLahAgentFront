@@ -1,0 +1,39 @@
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+
+
+.table-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 120px; /* Adjust the padding as needed for the left and right spacing */
+}
+
+.client-table {
+  width: 100%;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.client-table th, .client-table td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.client-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.client-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.client-table tr:hover {
+  background-color: #ffd700;
+}

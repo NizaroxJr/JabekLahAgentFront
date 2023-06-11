@@ -1,0 +1,68 @@
+<main class="main">
+  <div class="add-client-container">
+    <div>
+      <div>
+        <div>
+          <div>
+            <h5 class="form-title">Add Client</h5>
+
+            <form class="form-add-client" #AgentAddForm="ngForm" (ngSubmit)="addClientFormSubmited()">
+
+              <div class="form-group">
+                <label class="form-control-label">User Name<span class="text-danger"> *</span></label>
+                <input type="text" [(ngModel)]="client.userName" #FirstName="ngModel" id="fname" name="fname" required pattern="[a-zA-Z]+" class="form-control">
+                <div *ngIf="FirstName.touched && FirstName.invalid">
+                  <div class="alert alert-danger" *ngIf="FirstName.errors?.required">First name field is required</div>
+                  <div class="alert alert-danger" *ngIf="FirstName.errors?.pattern">Invalid format for first name</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-control-label">First name<span class="text-danger"> *</span></label>
+                <input type="text" [(ngModel)]="client.firstName" #FirstName="ngModel" id="firstName" name="firstName" required pattern="[a-zA-Z]+" class="form-control">
+                <div *ngIf="FirstName.touched && FirstName.invalid">
+                  <div class="alert alert-danger" *ngIf="FirstName.errors?.required">First name field is required</div>
+                  <div class="alert alert-danger" *ngIf="FirstName.errors?.pattern">Invalid format for first name</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-control-label">Last name<span class="text-danger"> *</span></label>
+                <input type="text" [(ngModel)]="client.lastName" #LastName="ngModel" id="lastName" name="lastName" required pattern="[a-zA-Z]+" class="form-control">
+                <div *ngIf="LastName.touched && LastName.invalid">
+                  <div class="alert alert-danger" *ngIf="LastName.errors?.required">Last name field is required</div>
+                  <div class="alert alert-danger" *ngIf="LastName.errors?.pattern">Invalid format for last name</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-control-label">Email Address<span class="text-danger"> *</span></label>
+                <input type="text" [(ngModel)]="client.email" #ClientEmail="ngModel" id="Clientemail" name="ClientEmail" required pattern="^[a-zA-Z0-9.]+@gmail.com$" class="form-control">
+                <div *ngIf="ClientEmail.touched && ClientEmail.invalid">
+                  <div class="alert alert-danger" *ngIf="ClientEmail.errors?.required">Email address field is required</div>
+                  <div class="alert alert-danger" *ngIf="ClientEmail.errors?.pattern">Invalid format for email address</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-control-label">Phone Number<span class="text-danger"> *</span></label>
+                <input type="text" [(ngModel)]="client.phoneNumber" #ClientPhoneNumber="ngModel" id="ClientPhoneNumber" name="ClientPhoneNumber" required pattern="[0-9+]+" minlength="10" class="form-control">
+                <div *ngIf="ClientPhoneNumber.touched && ClientPhoneNumber.invalid">
+                  <div class="alert alert-danger" *ngIf="ClientPhoneNumber.errors?.required">Phone number field is required</div>
+                  <div class="alert alert-danger" *ngIf="ClientPhoneNumber.errors?.pattern">Invalid format for phone number</div>
+                  <div class="alert alert-danger" *ngIf="ClientPhoneNumber.errors?.minlength">Phone number must have at least 10 digits</div>
+                </div>
+              </div>
+
+              <div class="form-group justify-content-center">
+                <button type="submit" class="btn btn-block btn-primary">Add Client</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+

@@ -1,0 +1,21 @@
+.input-group-prepend span {
+    width: 50px;
+    background-color:lightblue ;
+    color: black;
+    border: 0 !important;
+}
+
+.container {
+    max-width: 600px !important;
+    
+}
+.main{
+    background-image: url("../../assets/images/8522418.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding-top:100px;
+}
+.card{
+    margin-top: 50px;
+}

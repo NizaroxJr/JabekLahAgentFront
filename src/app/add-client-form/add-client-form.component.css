@@ -1,0 +1,71 @@
+.main {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../assets/images/aquarelle-liquide-orange-eclabousse-fond-blanc.jpg");
+  background-size: cover;
+}
+
+.add-client-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  margin: auto auto;
+}
+
+
+
+.form-add-client {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-title {
+  color: lightgreen;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-group input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #222;
+}
+
+.form-group .input-field {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #222;
+}
+
+.btn-primary {
+  background-color:lightgreen;
+  color: #000;
+  border-color: #ffc107;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 80px;
+}
+
+.btn-primary:hover {
+  background-color: #ffc107;
+  color: #fff;
+  border-color: #000;
+}
+
